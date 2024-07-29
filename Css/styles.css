@@ -1,0 +1,242 @@
+
+/* tipografia*/
+body { 
+    font-family: "Nunito", sans-serif;
+   } 
+ 
+
+h3 { width: 100%;
+    color: #f3f3fc;
+    background-color: #9e9ef4;
+    font-size: 15px; 
+  
+   
+}
+   
+
+
+
+header {
+    background-color: #F3F3FC;
+    width: 100%;
+    text-align: center;
+    
+    
+      } 
+    
+    
+    /*centrado*/
+  
+    
+header nav ul {   
+    /*flexbox */
+     display: flex;
+     list-style: none;
+     padding: 5px;
+     margin: 0px;
+     justify-content: center;
+     flex-wrap: wrap;
+     list-style: none;
+   
+    
+ 
+
+    }
+    
+header nav ul li {
+     margin-right: 25px;
+     list-style-type: none;
+     text-decoration: none;
+    
+          
+    }
+
+header nav ul li a {  
+    text-decoration: none;
+   
+}
+
+header nav ul li:last-child {
+    margin-right: 0px;
+   
+}
+
+.carousel-img {
+    max-height: 190px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+    
+}
+
+
+/*class del logotipo*/
+.logotipo1 {
+
+    width: 100%;
+    max-width: 90px; /* Tamaño del isologotipo */
+    height: auto;
+    position: absolute; 
+    top: -10px; /* Alineación superior */
+    left: -10px; /* Alineación izquierda */
+}
+
+
+main {
+    color: #878790;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main section {
+    justify-content: margin-bottom 20px;
+}
+
+main section img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    color: #878790;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff; /* Cambia el color  */
+    padding: 10px; /* padding ajustable */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Sombra para separar el footer del contenido */
+}
+
+footer a {
+    display: block; /* Hace que el enlace ocupe el espacio del icono */
+    margin-right: 15px; /* Espacio entre el icono y el texto */
+}
+
+.whata {
+    width: 75px; /* Ajusta el tamaño del icono si es necesario */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+footer p {
+    margin: 0; /* Eliminar márgenes  */
+}
+        
+    
+/*clases */
+
+.content {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente  */
+    align-items: center; /* Centrar verticalmente el contenido */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.senora {
+    margin-right: 20px; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.textoservicio {
+    max-width: 700px; /* Ajusta el ancho máximo del texto si es necesario */
+}
+
+
+.textodeturnos {
+    margin: auto;
+    text-align: right;
+}
+
+.textodeturnos:hover  {
+    background-color: #6558F5;        
+    
+} 
+
+
+.tur {
+     margin: auto;
+} 
+                
+.presta { 
+    margin: auto; 
+} 
+
+
+
+/* Uso de Grid Novedades */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta las columnas automáticamente */
+    grid-template-rows: auto;
+    gap: 10px; /* Espacio entre las celdas */
+    place-items: center; /* Centra los elementos en cada celda */
+}
+
+.grid-container .item-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.grid-container .item-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Media query - Mobile */
+@media only screen and (max-width: 500px) {
+body {
+        background-color:#f7faff ;
+       
+    }
+
+   header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px; /* Añade espacio entre los elementos del navbar */
+        margin-right: 0; /* Elimina el margen derecho */
+    }
+
+    header img:last-child {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+   
+
+   /*Media query - Desktop*/
+@media only screen and ( min-width: 961px) {
+   
+   body {
+       background-color:#F3F3FC ;
+   
+       }
+      
+    }
+
+
+     
+           
+    
+        
+
+       
+
+
+
